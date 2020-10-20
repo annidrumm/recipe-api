@@ -4,7 +4,7 @@
 
 ### An App To For Healthy And Nutritious Food Recipes
 
-What is the best recipe & nutrition? View the recipes from edamam´s API and search for the best food. 🥗
+What is the best recipe & nutrition? View the recipes from edamam´s API and search for the best food. 
 
 ### Design
 
