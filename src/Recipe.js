@@ -7,7 +7,7 @@ const Recipe = ({ title, ingredients, calories, image, healthLabels}) => {
         <div className={style.recipe}>
             <img style={{margin:"20px"}} src={image} alt="" />
             <h1 style={{margin:"20px", textAlign:"center"}}>{title}</h1>
-            <h3>{calories} Kcal</h3>
+            <h3>{Math.round(calories)} Kcal</h3>
              <ul className="healthLabels">
                 {healthLabels.map(healthLabel => (
                     <li className="healthItems">{healthLabel}</li>
