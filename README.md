@@ -6,6 +6,10 @@
 
 What is the best recipe & nutrition? View the recipes from edamam´s API and search for the best food. 🥗
 
+### Design
+
+![recipe](src/recipes.png)
+
 ## `Tech Stack`
 
 - API
