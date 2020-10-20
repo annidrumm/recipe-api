@@ -1,38 +1,89 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+min-height: 100vh;
+background: white;
   }
+
+h1{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-form{
+min-height: 5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 800px)
+{.search-bar{
+width: 50%;
+}}
+
+.search-bar{
+font-size: 18px;
+width: 50%;
+border-radius: 30px;
+border-color: rgb(241, 237, 237);
+padding: 10px;
+margin: 10px;
+}
+
+.search-button{
+box-shadow: 0 5px 20px rgb(156, 155, 155);
+font-size: 18px;
+background: #26AD5F;
+border: none;
+border-radius: 30px;
+padding: 10px 20px;
+color: white;
+}
+
+.recipes{
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; 
+}
+
+@media (min-width: 0px) and (max-width: 800px)
+{.recipes{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}}
+
+img{
+  border-radius: 50%;
+}
+
+.healthLabels{
+    list-style: none;
+    margin: 10px;
+}
+
+.healthItems{
+  display:inline-block;  
+  background: #26AD5F;
   color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  margin: 2px 5px;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.subheadline{
+background: white;
+text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2, h3{
+  display: inline;
+  margin: 5px;
+}
+
+h3{
+  color: #808080;
 }

@@ -31,15 +31,30 @@ const getSearch = e => {
   setSearch('')
 }
 
+const popularFood = recipes.find(obj => {
+  return obj.label === 'Apple Smoothie'
+  console.log(popularFood)
+});
+
   return (
     <div className="App">
+      <div className="subheadline" style={{margin:"15px"}}>
+        <h1 style={{display:"inline"}}>Healthy and nutritious</h1>
+        <h3 style={{fontSize:"2em", fontWeight:"bolder"}}>food recipes</h3>
+        </div>
       <form onSubmit={getSearch} className="search-form">
-        <input className="search-bar" type="text" value={search} onChange={updateSearch} />
+        <input placeholder="smoothie, salad" className="search-bar" type="text" value={search} onChange={updateSearch} />
         <button className="search-button" type="submit">Search</button>
       </form>
+      <div className="recipes">
       {recipes.map(recipe => ( 
-         <Recipe key={recipe.recipe.label} title={recipe.recipe.label} ingredients={recipe.recipe.ingredients} calories={recipe.recipe.calories} image={recipe.recipe.image} />
+         <Recipe key={recipe.recipe.label} title={recipe.recipe.label} ingredients={recipe.recipe.ingredients} calories={recipe.recipe.calories} image={recipe.recipe.image} healthLabels={recipe.recipe.healthLabels} />
       ))}
+      </div> 
+       <div className="subheadline">
+            <h2>Popular</h2>
+            <h3 style={{fontSize:"1.5em", fontWeight:"bolder"}}>Food</h3>
+            </div>
     </div>
   );
 }

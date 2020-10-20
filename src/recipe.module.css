@@ -1,0 +1,17 @@
+.recipe{
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgb(156, 155, 155);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    align-items: center;
+    min-width:  30%;
+    height: 70vh;
+}
+
+@media screen and (min-width: 600px)
+{.recipes{
+    min-width:  80%;
+}}
