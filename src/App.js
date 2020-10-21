@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Recipe from './Recipe'
 import './App.css';
+import plant from './two-leaves.svg'
+
 
 const App = () => {
   const APP_ID = "5356d460"
@@ -41,6 +43,7 @@ const popularFood = recipes.find(obj => {
       <div className="subheadline" style={{margin:"15px"}}>
         <h1 style={{display:"inline"}}>Healthy and nutritious</h1>
         <h3 style={{fontSize:"2em", fontWeight:"bolder"}}>food recipes</h3>
+        <img style={{width:"30px", height:"30px"}} src={plant} />
         </div>
       <form onSubmit={getSearch} className="search-form">
         <input placeholder="smoothie, salad" className="search-bar" type="text" value={search} onChange={updateSearch} />
@@ -51,10 +54,6 @@ const popularFood = recipes.find(obj => {
          <Recipe key={recipe.recipe.label} title={recipe.recipe.label} ingredients={recipe.recipe.ingredients} calories={recipe.recipe.calories} image={recipe.recipe.image} healthLabels={recipe.recipe.healthLabels} />
       ))}
       </div> 
-       <div className="subheadline">
-            <h2>Popular</h2>
-            <h3 style={{fontSize:"1.5em", fontWeight:"bolder"}}>Food</h3>
-            </div>
     </div>
   );
 }
