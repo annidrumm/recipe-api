@@ -7,8 +7,7 @@
     justify-content: space-around;
     background: white;
     align-items: center;
-    min-width:  35%;
-    height: 90vh;
+    min-width:  30%;
 }
 
 @media screen and (min-width: 600px)

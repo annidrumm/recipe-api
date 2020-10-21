@@ -16,7 +16,6 @@ justify-content: center;
 align-items: center;
 }
 
-
 .search-bar{
 font-size: 18px;
 width: 50%;
@@ -99,4 +98,8 @@ h2, h3{
 
 h3{
   color: #808080;
+}
+
+.box{
+  text-align: center;
 }
