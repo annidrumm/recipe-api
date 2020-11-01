@@ -8,7 +8,7 @@ What is the best recipe & nutrition? View the recipes from [edamam´s API](https
 
 ### Design
 
-![recipe](src/recipe1.png)
+![recipe](src/recipe.png)
 
 ## `Tech Stack`
 
